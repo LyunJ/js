@@ -1,0 +1,32 @@
+<!-- 상위 스코프의 식별자를 사용하지 않는 내부 함수, 사용되지 않는 내부함수는 클로저라고 하지 않는다 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function foo(){
+            const x = 1;
+            const y = 2;
+
+            function bar(){
+                const z = 3;
+
+                debugger;
+
+                console.log(z);
+            }
+
+            return bar;
+        }
+
+        const bar = foo();
+        bar();
+    </script>
+</body>
+</html>
