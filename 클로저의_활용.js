@@ -95,27 +95,28 @@
 // console.log(counter.decrease());
 // console.log(counter.decrease());
 
-function makeCounter(predicate) {
-  let counter = 0;
+// function makeCounter(predicate) {
+//   let counter = 0;
 
-  return function () {
-    counter = predicate(counter);
-    return counter;
-  };
-}
+//   return function () {
+//     counter = predicate(counter);
+//     return counter;
+//   };
+// }
 
-function increase(n) {
-  return ++n;
-}
+// function increase(n) {
+//   return ++n;
+// }
 
-function decrease(n) {
-  return --n;
-}
+// function decrease(n) {
+//   return --n;
+// }
 
-const increaser = makeCounter(increase);
-console.log(increaser());
-console.log(increaser());
+// const increaser = makeCounter(increase);
+// console.log(increaser());
+// console.log(increaser());
 
-const decreaser = makeCounter(decrease);
-console.log(decreaser());
-console.log(decreaser());
+// // increaser와는 독립된 렉시컬 환경을 갖기 때문에 카운터 상태가 연동하지 않는다
+// const decreaser = makeCounter(decrease);
+// console.log(decreaser());
+// console.log(decreaser());

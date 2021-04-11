@@ -23,4 +23,4 @@ const someone = new Person("lee");
 // someone.sayHi();
 
 Person.staticThis(); //정적 메소드 내의 this는 클래스를 가리킨다
-someone.protoThis(); //프로토타입 메소트 내의 this는 호출하는 인스턴스를 가리킨다
+someone.protoThis(); //프로토타입 메소드 내의 this는 호출하는 인스턴스를 가리킨다
